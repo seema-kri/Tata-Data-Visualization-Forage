@@ -1,8 +1,11 @@
 # 📊 Online Retail Sales Analysis — 2011 Executive Dashboard (Power BI)
 
 **Author:** Seema Kumari
+
 **Tool Used:** Microsoft Power BI
+
 **Project Type:** Business Intelligence / Executive Sales Analysis
+
 **Dataset:** Online Retail Transactions 
 ---
 
