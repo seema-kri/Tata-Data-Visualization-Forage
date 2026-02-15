@@ -1,85 +1,77 @@
-# 📊 Online Retail Sales Analysis — 2011 Executive Dashboard (Power BI)
+# 📊 Tata Data Visualization — Online Retail Executive Dashboard (Power BI)
 
-**Author:** Seema Kumari
-
-**Tool Used:** Microsoft Power BI
-
-**Project Type:** Business Intelligence / Executive Sales Analysis
-
-**Dataset:** Online Retail Transactions 
----
-
-# 🔷 Executive Summary
-
-This project delivers a professional Power BI dashboard built to answer key strategic questions from executive leadership (CEO & CMO) regarding **2011 online retail performance**. The objective is to transform raw transactional data into actionable insights that support:
-
-* Revenue trend forecasting
-* Market expansion strategy
-* Customer retention planning
-* Country-level demand targeting
-
-The dataset was rigorously cleaned and validated before analysis to ensure reliable decision-making outputs.
+**Author:** Seema Kumari  
+**Program:** Tata Data Visualization Job Simulation (Forage)  
+**Project Type:** Business Intelligence / Executive Dashboard  
+**Tool Used:** Microsoft Power BI  
 
 ---
 
-# 🎯 Business Requirements
-
-Leadership requested visual analytics to answer the following:
-
-1. **Monthly revenue trends for 2011** to identify seasonality patterns
-2. **Top 10 revenue-generating countries (excluding UK)** with quantity sold
-3. **Top 10 customers by revenue contribution**
-4. **Global demand distribution** to guide expansion opportunities
-
-Each requirement is delivered as a dedicated Power BI report page.
+## 🔷 Project Title & Headline  
+Online Retail Sales Analysis — 2011 Executive Dashboard  
+An executive-level Power BI dashboard built to transform raw online retail transaction data into actionable business insights for leadership decision-making.
 
 ---
 
-# 🗂 Dataset Description
-
-The dataset contains transactional records from an online retail store, including:
-
-* Invoice Number
-* Product Code & Description
-* Quantity Purchased
-* Invoice Date
-* Unit Price
-* Customer ID
-* Country
-  
----
-
-# 🧹 Data Preparation & Quality Controls
-
-Data cleaning was performed in **Power Query Editor** before visualization.
-
-## ✅ Mandatory Validation Rules Applied
-
-### Quantity Validation
-
-* Removed rows where Quantity ≤ 0
-* Eliminated returns and erroneous entries
-
-### Unit Price Validation
-
-* Removed rows where UnitPrice ≤ 0
-* Prevented distorted revenue calculations
-
-### Customer Integrity
-
-* Removed records with missing CustomerID
-* Ensured accuracy in customer ranking visuals
-
-## ✅ Data Type Corrections
-
-| Column      | Data Type    |
-| ----------- | ------------ |
-| InvoiceDate | Date         |
-| Quantity    | Whole Number |
-| UnitPrice   | Decimal      |
-| CustomerID  | Text         |
+## 📝 Short Description  
+This project presents a professional Power BI dashboard created during the Tata Data Visualization simulation. It analyzes 2011 online retail sales data and converts raw transactions into meaningful visual insights on revenue trends, customer contribution, and country-wise demand. The dashboard supports forecasting, customer strategy, and market expansion decisions.
 
 ---
+
+## 🛠 Tech Stack  
+- Microsoft Power BI  
+- Power Query (Data Cleaning & Transformation)  
+- DAX Measures & Calculated Columns  
+- Data Modeling  
+- Excel / CSV Dataset  
+
+---
+
+## 🗂 Data Source  
+Dataset provided as part of the Tata Data Visualization simulation on Forage.  
+It contains online retail transaction records including invoice numbers, products, quantities, prices, customers, and countries.  
+All preprocessing and validation were performed inside Power BI.
+
+---
+
+## 🎯 Business Problem  
+
+Executive leadership required visual analytics to answer key business questions:
+
+- What are the monthly revenue trends for 2011?  
+- Which countries generate the highest revenue outside the UK?  
+- Who are the top revenue-contributing customers?  
+- Where is global product demand strongest?  
+
+The goal was to convert raw data into executive-ready dashboards for strategic planning.
+
+---
+
+## 🎯 Dashboard Goals  
+
+- Analyze monthly revenue trends  
+- Identify top 10 countries by revenue (excluding UK)  
+- Rank top 10 customers by revenue contribution  
+- Visualize global demand distribution  
+- Support expansion and retention strategy  
+
+---
+
+## 🧹 Data Cleaning & Preparation  
+
+Data preparation was completed using Power Query before visualization:
+
+- Removed rows where Quantity ≤ 0 (returns & invalid entries)  
+- Removed rows where Unit Price ≤ 0  
+- Removed records with missing Customer ID  
+- Corrected column data types  
+- Created Year column from InvoiceDate  
+- Created Month column for trend analysis  
+- Created Month Number column for correct sorting  
+- Applied Month → Sort by Month Number  
+
+---
+
 
 # 🧮 DAX Measures & Calculated Columns
 
@@ -116,104 +108,42 @@ Month → Sort by Column → Month Number
 
 ---
 
-## 📈 Page 1 — Monthly Revenue Trend (2011)
+## 📊 Key Insights  
 
-**Purpose:** Identify seasonality and revenue fluctuations in Year 2011
+- Revenue shows strong seasonal growth toward Q4  
+- November is the highest revenue month  
+- Revenue is concentrated among a small group of customers  
+- Non-UK European markets contribute significantly  
+- Demand clusters appear in Europe and selected global regions  
+- Quantity sold does not always equal revenue — indicating pricing effects
 
-**Key Findings:**
+  
+## 🚀 Business Recommendations  
 
-* Peak revenue observed in November
-* Lowest revenue in February
-* Strong seasonal upward trend in Q4
-* Useful for demand forecasting and inventory planning
-
----
-
-## 🌍 Page 2 — Top 10 Countries by Revenue (Excluding UK)
-
-* Excluded United Kingdom
-* Top N = 10 by Revenue
-
-**Key Findings:**
-
-* Netherlands, EIRE, and Germany lead non-UK revenue
-* Revenue not always proportional to quantity sold
-* Indicates price and product mix differences
+- Increase marketing in top revenue countries  
+- Develop VIP programs for high-value customers  
+- Prepare inventory for Q4 spikes  
+- Target campaigns in high-demand regions  
+- Investigate low-revenue months for improvement  
 
 ---
 
-## 👤 Page 3 — Top 10 Customers by Revenue
-
-**Purpose:** Identify high-value customers
-
-**Key Findings:**
-
-* Revenue concentration among a small customer group
-* Top 2 customers contribute over 500K revenue
-* Strong opportunity for loyalty & retention programs
+## 🖼 Dashboard Visual Preview  
+![Executive Dashboard](Dashboard.png)
 
 ---
 
-## 🗺 Page 4 — Global Demand Distribution
-
-**Metrics:**
-
-* Quantity sold by country
-* Revenue tooltip
-
-
-* UK excluded to highlight expansion markets
-
-**Key Findings:**
-
-* High demand clusters in Europe, North America, Australia
-* Several mid-tier countries show expansion potential
-
----
-
-# 📌 Strategic Insights
-
-* Revenue exhibits **clear seasonality**
-* Non-UK European markets are strong revenue drivers
-* Customer revenue is highly concentrated
-* Demand is geographically clustered
-* Several countries show scalable growth opportunity
-
----
-
-# 🚀 Business Recommendations
-
-* Increase marketing investment in top-performing countries
-* Develop VIP programs for top customers
-* Prepare inventory for Q4 demand spikes
-* Test targeted campaigns in high-demand regions
-* Investigate low-revenue months for operational gaps
-
----
-
-# 🛠 Technology Stack
-
-* Microsoft Power BI
-* Power Query
-* DAX Calculations
-* Data Modeling
-* Executive Dashboard Design
-
----
-
-# ⭐ Project Value
+## ⭐ Project Value  
 
 This project demonstrates:
 
-* Real-world executive analytics workflow
-* Data cleaning & validation discipline
-* Business-focused dashboard design
-* Decision-driven visualization
-* Professional Power BI implementation
-
+- End-to-end BI workflow  
+- Data cleaning & validation discipline  
+- DAX calculation skills  
+- Executive dashboard design  
+- Business storytelling with visuals  
+- Decision-driven analytics approach
 ---
+## 📌 About  
 
-**Prepared by:** Seema Kumari
-**Role:** Data Analyst — Sales & Market Intelligence Project
-
-If you found this project useful, please consider giving it a ⭐ on GitHub.
+Completed a real-world style data visualization simulation task. Built executive dashboards, answered leadership questions, and delivered business insights for decision-making.
